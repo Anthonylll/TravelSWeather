@@ -1,4 +1,4 @@
-package com.Anthony.travelsweather.model;
+   package com.Anthony.travelsweather.model;
 
 public class City {
 	

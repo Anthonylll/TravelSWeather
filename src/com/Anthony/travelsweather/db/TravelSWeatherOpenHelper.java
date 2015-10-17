@@ -11,7 +11,7 @@ public class TravelSWeatherOpenHelper extends SQLiteOpenHelper{
 	 * Province表建表语句
 	 */
 	
-	public static final String CREATE_PROVINCE = "crate table Province ("
+	public static final String CREATE_PROVINCE = "create table Province ("
 			+ "id integer primary key autoincrement, "
 			+ "province_name text, "
 			+ "province_code text)";
@@ -29,7 +29,7 @@ public class TravelSWeatherOpenHelper extends SQLiteOpenHelper{
 	 * County表建表语句
 	 */
 	public static final String CREATE_COUNTY = "create table County ("
-			+ "id interger primary key autoincrement, "
+			+ "id integer primary key autoincrement, "
 			+ "county_name text, "
 			+ "county_code text, "
 			+ "city_id interger) ";
