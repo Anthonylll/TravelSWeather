@@ -1,6 +1,7 @@
 package com.Anthony.travelsweather.activity;
 
 import com.Anthony.travelsweather.R;
+import com.Anthony.travelsweather.service.AutoUpdateService;
 import com.Anthony.travelsweather.util.HttpCallbackListener;
 import com.Anthony.travelsweather.util.HttpUtil;
 import com.Anthony.travelsweather.util.Utility;
@@ -177,6 +178,8 @@ public class WeatherActivity extends Activity implements OnClickListener{
 		currentDateText.setText(prefs.getString("current_date", ""));
 		weatherInfoLayout.setVisibility(View.VISIBLE);
 		cityNameText.setVisibility(View.VISIBLE);
+		Intent intent = new Intent(this, AutoUpdateService.class);
+		startService(intent);
 	}
 
 }
