@@ -15,7 +15,7 @@
             android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginLeft="10dp"
-            android:background="@drawable/ic_launcher" />
+            android:background="@drawable/home_w" />
         
         <TextView
             android:id="@+id/city_name"
@@ -29,9 +29,11 @@
             android:id="@+id/refresh_weather"
             android:layout_width="30dp"
             android:layout_height="30dp"
+            android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_marginRight="10dp"
-            android:background="@drawable/ic_launcher" />    
+             android:layout_marginRight="10dp"
+            android:background="@drawable/refresh" />
+    
     </RelativeLayout>
     
     <RelativeLayout
@@ -62,6 +64,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
+                android:layout_gravity="center_horizontal"
                 android:textColor="#FFF"
                 android:textSize="18sp" />
             
