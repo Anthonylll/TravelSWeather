@@ -12,7 +12,7 @@ public class WelcomeActivity extends Activity{
 		super.onCreate(savedInstanceState);
 		requestWindowFeature(Window.FEATURE_NO_TITLE);
 		setContentView(R.layout.welcome);
-		mHandler.sendEmptyMessageDelayed(GOTO_C_Activity, 3000);//3ÃëÌø×ª
+		mHandler.sendEmptyMessageDelayed(GOTO_C_Activity, 1500);//3ÃëÌø×ª
 	}
     private static final int GOTO_C_Activity = 0;
     private Handler mHandler = new Handler(){
